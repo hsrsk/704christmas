@@ -1,12 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My NES.css Site</title>
+    <title>Extended 704</title>
+    
+    <!-- NES.css -->
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    
+    <!-- Press Start 2P Font (the authentic NES font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <style>
+        @font-face{
+            font-family: 'DungGeunMo';
+            src: url('fonts/DungGeunMo.eot');
+            src: url('fonts/DungGeunMo.eot?#iefix') format('embedded-opentype'),
+                 url('fonts/DungGeunMo.woff2') format('woff2'), 
+                 url('fonts/DungGeunMo.woff') format('woff'); 
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap; 
+        }
+        
+        /* mobile */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 1rem;
+            font-family: 'DungGeunMo', monospace;
+            background-color: #212529;
+            color: #fff;
+            margin: 0;
+            font-size: 12px;
+            line-height:1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 1.5 rem;
+            margin-bottom: 1rem;
+            word-wrap: break-word;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            line-height: 1.9;
+        }
+
+        .button-group button{
+            flex: 1 1 100%;
+            min-width: 120px;
+        }
+
+        .nes-balloon{
+            margin-bottom: 1rem;
+        }
+
+        .icon-group{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .nes-icon {
+            transform: scale(0,8);
+        }
+
+        .nes-field{
+            margin-bottom: 1rem
+        }
+
+        .nes-input{
+            width: 100%
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 2rem;
+                font-size: 14px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .button-group button {
+                flex: 0 1 auto; /* Allow buttons to size naturally */
+            }
+            
+            .nes-icon {
+                transform: scale(1); /* Normal size */
+            }
+        }
+        
+        /* ===== DESKTOP (≥ 1024px) ===== */
+        @media (min-width: 1024px) {
+            body {
+                padding: 3rem;
+                font-size: 16px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                max-width: 980px;
+            }
+            
+            /* Two-column layout for balloons on desktop */
+            .balloon-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+        
+        /* ===== LARGE DESKTOP (≥ 1440px) ===== */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Hello World!</h1>
-    <p>This is my first GitHub Pages site.</p>
+    <p>This is my retro NES.css site!</p>
 </body>
 </html>
