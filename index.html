@@ -151,7 +151,69 @@
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is my retro NES.css site!</p>
+    <div class="container">
+    <!--Headers-->
+    <section>
+        <h1>반응형 사이트</h1>
+        <p>화면 크기에 따라 자동으로 조절되나요?</p>
+    </section>
+
+    <!--Buttons-->
+    <section>
+    <h2>버튼</h2>
+    <div class="button-group">
+        <button type="button" class="nes-btn">일반</button>
+        <button type="button" class="nes-btn is-primary">primary</button>
+        <button type="button" class="nes-btn is-success">success</button>
+        <button type="button" class="nes-btn is-error">error</button>
+    </div>
+    </section>
+
+    <!--Balloons-->
+    <section>
+        <h2>대화</h2>
+        <div class="balloon-container">
+            <div class="nes-balloon from-left is-dark">
+                <p>모바일에서도 잘 보이나요?</p>
+            </div>
+            <div class="nes-balloon from-right is-dark">
+                <p>화면이 작으면? <br> 아래로 정렬됩니다!</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="nes-container with-title is-dark">
+            <p class="title">반응형 디자인</p>
+            <p>이 사이트는 모든 기기에서 잘 작동합니다. 브라우저 창 크기를 조절해보세요!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>아이콘</h2>
+        <div class="icon-group">
+            <i class="nes-icon trophy is-large"></i>
+            <i class="nes-icon heart is-large"></i>
+            <i class="nes-icon star is-large"></i>
+            <i class="nes-icon coin is-large"></i>
+        </div>
+    </section>
+
+    <!-- Progress Bar -->
+    <section>
+        <h2>진행률</h2>
+        <progress class="nes-progress is-primary" value="70" max="100"></progress>
+    </section>
+
+    <!-- Input -->
+    <section>
+        <h2>입력 필드</h2>
+        <div class="nes-field">
+            <label for="name_field">이름</label>
+            <input type="text" id="name_field" class="nes-input" placeholder="이름을 입력하세요...">
+        </div>
+    </section>
+
+    </div>
 </body>
 </html>
